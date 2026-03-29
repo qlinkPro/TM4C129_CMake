@@ -31,7 +31,6 @@ target_compile_options(${PROJECT_NAME} PRIVATE
         -Wall
         -ffreestanding
         -fno-builtin-memcpy
-        $<$<CONFIG:Debug>:-Og -g3 -fno-omit-frame-pointer>
 )
 
 target_link_options(${PROJECT_NAME} PRIVATE
